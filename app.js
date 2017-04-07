@@ -47,7 +47,7 @@ function createChatSocket(userId, channelId, endpoints, authkey) {
             console.log(`Ponged ${data.user_name}`);
         } else if (data.message.message[0].data.toLowerCase().startsWith('!command')) {
             socket.call('msg', ['response']);
-            console.log('Announced Gamertag');
+            console.log('log');
         }
     });
 
